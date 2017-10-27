@@ -7,7 +7,7 @@ class nginx::service(
   Boolean $hasrestart  = $::nginx::service_hasstatus,
 ) {
   service { 'nginx_service':
-    ensure     => $ensure,
+    ensure     => running,
     name       => $service_name,
     enable     => $enable,
     hasstatus  => $hasstatus,
