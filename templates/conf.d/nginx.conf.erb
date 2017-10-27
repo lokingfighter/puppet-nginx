@@ -6,7 +6,7 @@ error_log <%= @log_dir %>/error.log;
 pid       <%= @pid_file %>;
 
 events {
-  worker_connections <%= @worker_connections %>;
+  worker_connections 1024;
 }
 
 http {
