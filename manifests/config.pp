@@ -25,7 +25,7 @@ class nginx::config(
     recurse => true,
   }
 
-  file { '$docroot':
+  file { '/usr/share/nginx':
     ensure  => directory,
     recurse => true,
     mode   => $mode,
