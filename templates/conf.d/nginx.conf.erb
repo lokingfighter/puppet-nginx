@@ -1,6 +1,6 @@
 # File managed by Puppet
 user <%= @process_user %>;
-#worker_process 512;
+worker_process 512;
 
 error_log <%= @log_dir %>/error.log;
 pid       <%= @pid_file %>;
