@@ -3,7 +3,7 @@ class nginx::install(
   String $package_name = $::nginx::package_name,
 ) {
   package { 'install_nginx':
-  ensure => '$ensure',
+  ensure => present,
   name   => $package_name,
   }
 }
