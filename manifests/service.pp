@@ -8,7 +8,7 @@ class nginx::service(
 ) {
   service { 'nginx':
     ensure     => running,
-    name       => $service_name,
+    name       => 'nginx',
     enable     => $enable,
     hasstatus  => $hasstatus,
     hasrestart => $hasrestart,
